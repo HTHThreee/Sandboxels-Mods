@@ -1,11 +1,22 @@
 // TODO:
 // Add alpha, neutrinos, gluons, and W and Z and Higgs bosons.
 // Add human reactions.
+// Add gamma ray.
+elements.positron = {
+    color: "#AA0000",
+    behavior: behaviors.BOUNCY,
+    category: "energy",
+    description: "The positron is the first antilepton, and has a charge of -1.",
+    state: "gas",
+    charge: 1,
+    maxSize: 1
+};
+
 elements.electron = {
     color: "#00AAAA",
     behavior: behaviors.BOUNCY,
     category: "energy",
-    description: "The alpha particle is a helium-4 nucleus.",
+    description: "The electron is the first lepton, and has a charge of -1.",
     state: "gas",
     charge: 1,
     maxSize: 1
@@ -20,10 +31,10 @@ elements.alpha_particle = {
     category: "energy",
     description: "The alpha particle is a helium-4 nucleus.",
     state: "gas",
-    maxSize: 1
+    maxSize: 1/*,
     reactions: {
-        "electron
-    }
+        "electron"
+    }*/
 };
 
 elements.electron_neutrino = {
